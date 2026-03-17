@@ -44,7 +44,9 @@ Tags:        custom
     align-items: center;
     padding: 0 2rem;
     height: 80px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 22px 22px;
 }
 
 /* Logo */
@@ -178,6 +180,7 @@ Tags:        custom
 
 html, body {
     height: 100%;
+    background: var(--cream)
 }
 
 #page {
@@ -185,7 +188,6 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-
 
 #content,
 .site-content,
@@ -275,6 +277,8 @@ p, a {
     border-radius: 26px;
     font-weight: 600;
     cursor: pointer;
+    margin-left: 35%;
+    margin-top: -5rem;
     border: 1px solid var(--purple);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     &:hover {
@@ -358,8 +362,13 @@ p, a {
 .about-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-top: 1px solid rgba(26, 16, 50, 0.1);
+    /* border-top: 20px solid rgba(26, 16, 50, 0.1); */
     background-color: var(--cream);
+    box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.25);
+    background: #F6F6DE;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
 }
 
 .about-row--three {
@@ -373,6 +382,12 @@ p, a {
     justify-content: center;
     gap: 0.75rem;
     font-family: 'Nunito', sans-serif;
+    /* background: #F6F6DE; */
+}
+
+.about-section {
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.50);
+    background: #F6F6DE;
 }
 
 .about-image img {
@@ -423,19 +438,31 @@ p, a {
     justify-content: center;
     padding: 3rem;
     min-height: 200px;
+    /* box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.50); */
+    background: #F6F6DE;
 }
 
 .feature-left {
-    background: linear-gradient(135deg, #f0e8f5, #fde8f0);
+    background-image: url(img/orange-dust.png);
+    box-shadow: 10px 0 29px -2px rgba(26, 16, 50, 0.7);
 }
 
 .feature-right {
-    background: linear-gradient(135deg, #fde8f0, #f0e8f5);
+    background-image: url(img/purple-dust.png);
+    /* box-shadow: -10px 0 29px -10px rgb(26, 16, 50); */
+    box-shadow: -10px 0 29px -2px rgba(26, 16, 50, 0.7);
 }
 
 .about-feature-title .about-title {
     font-size: 3rem;
     text-align: center;
+}
+
+/* Reflection */
+
+.reflection {
+    background: url(img/purple-dust.png);
+    box-shadow: 10px 0 29px -2px rgba(26, 16, 50, 0.7);
 }
 
 /* Meet the Team
@@ -472,10 +499,46 @@ p, a {
     font-family: 'solvent', sans-serif;
 }
 
+.profile-pic {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-grid > div {
+    position: relative; 
+    width: 350px;
+    margin: 0 auto;
+}
+
+.card {
+    display: block;
+    width: 100%;
+    height: 350px;
+}
+
+.card-text {
+    position: absolute;
+    top: 73%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+
+.card-text h3, h4, p {
+    margin: 0;
+    padding: 0;
+    width: 375px;
+}
+
 /* Grids */
 .team-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 5%;
     justify-items: center;
 }
 
