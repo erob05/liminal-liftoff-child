@@ -30,12 +30,12 @@
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img src="https://placehold.co/80x80" alt="Liminal Liftoff Logo">
             </a>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-title">Liminal<br>Liftoff</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-title"><span class="purple">Liminal</span><br><span class="orange">Liftoff</span></a>
         </div>
         <nav class="main-navigation">
             <a <?php if ( is_front_page() ) echo 'class="current"'; ?> href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
             <a <?php if ( is_page( 'about' ) ) echo 'class="current"'; ?> href="<?php echo esc_url( get_permalink( get_page_by_path( 'about' ) ) ); ?>">About the Game</a>
             <a <?php if ( is_page( 'meet-the-team' ) ) echo 'class="current"'; ?> href="<?php echo esc_url( get_permalink( get_page_by_path( 'meet-the-team' ) ) ); ?>">Meet the Team</a>
-            <a id="buy-btn" href="/buy">Buy Now</a>
+            <a id="buy-btn" href="#">Buy Now</a>
         </nav>
 	</header><!-- #masthead -->

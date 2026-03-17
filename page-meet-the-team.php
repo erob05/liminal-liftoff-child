@@ -40,7 +40,7 @@ get_header();
 
     <!-- Game Development Leaders -->
     <section class="team-section team-section--purple">
-        <h2 class="team-section-title">Game Development Leaders</h2>
+        <h2 class="team-section-title"><span class="purple">Game Development Leaders</span></h2>
         <div class="team-grid team-grid--3">
             <?php for ($i = 0; $i < 3; $i++) : ?>
             <div class="team-card">
@@ -94,7 +94,7 @@ get_header();
 
     <!-- Game Development Members -->
     <section class="team-section team-section--peach">
-        <h2 class="team-section-title">Game Development Members</h2>
+        <h2 class="team-section-title"><span class="purple">Game Development Members</span></h2>
         <div class="team-grid team-grid--4">
             <?php for ($i = 0; $i < 4; $i++) : ?>
             <div class="team-card">
