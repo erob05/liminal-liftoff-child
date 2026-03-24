@@ -28,15 +28,7 @@ function liminal_liftoff_enqueue_fonts() {
     // Google Font
     wp_enqueue_style(
         'liminal-liftoff-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap',
-        array(),
-        null
-    );
-
-    // Adobe Font
-    wp_enqueue_style(
-        'liminal-liftoff-adobe-fonts',
-        'https://use.typekit.net/rdm0yhm.css', // replace with your Adobe kit URL
+        'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sedgwick+Ave&display=swap',
         array(),
         null
     );

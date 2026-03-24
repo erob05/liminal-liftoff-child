@@ -7,22 +7,16 @@ get_header();
 ?>
 <main id="primary" class="site-main">
 
-    <div class="team-page-header">
-        <h1 class="team-page-title">Meet the Team</h1>
-    </div>
-
     <!-- Project Leaders -->
     <section class="team-section team-section--cream">
+        <div class="team-page-header">
+        <h1 class="team-page-title">Meet the Team</h1>
+        </div>
+        
         <h2 class="team-section-title">Project Leaders</h2>
         <div class="team-grid team-grid--3">
         <div>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card.png" alt="Butler Community College" width="728" height="382" class="card"/>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Eric_Roberts-3-cropped.jpg" alt="Butler Community College" width="150" height="150" class="profile-pic"/>
-            <div class="card-text">
-                <h3>Eric Roberts</h3>
-                <h4>Web Developer</h4>
-                <p>Lorem ipsum dolor sit amet <br>consectetur, adipisicing elit. <br> Similique beatae,</p>
-            </div>
         </div>
         <div>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card.png" alt="Butler Community College" width="728" height="382" class="card"/>

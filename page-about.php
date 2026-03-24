@@ -9,7 +9,7 @@ get_header();
 
     <!-- Making of the Game -->
     <section class="about-row">
-        <div class="about-text">
+        <div class="about-text making-game">
             <h2 class="about-title">Making of the Game</h2>
             <h3 class="about-subheading">Paragraph Header</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus auctor dictum. Mauris finibus ante sit amet elit vulputate, in pretium metus gravida. Duis porttitor gravida lacus, in mattis urna malesuada at. Sed at erat rhoncus, semper arcu nec, aliquet enim. Sed sit amet semper mi. Aenean lobortis auctor magna, eget gravida augue volutpat ut.</p>
@@ -32,7 +32,7 @@ get_header();
 
     <!-- Features 2 -->
     <section class="about-row about-row--feature about-row--reverse">
-        <div class="about-text">
+        <div class="about-text about-text-right">
             <h3 class="about-subheading">Paragraph Header</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus auctor dictum. Mauris finibus ante sit amet elit vulputate, in pretium metus gravida. Duis porttitor gravida lacus, in mattis urna malesuada at. Sed at erat rhoncus, semper arcu nec, aliquet enim. Sed sit amet semper mi. Aenean lobortis auctor magna, eget gravida augue volutpat ut.</p>
         </div>
