@@ -374,6 +374,11 @@ p, a {
 .desc-text-left {
     width: 50%;
     padding: 3%;
+
+    p {
+        color: var(--dark-blue);
+        line-height: 1.8;
+    }
 }
 
 .desc-text-left {
@@ -595,8 +600,8 @@ p, a {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    font-size: 1.1rem;
-    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
     color: var(--purple);
     margin: 0;
     font-family: 'Sedgwick Ave', cursive;
@@ -609,7 +614,8 @@ p, a {
 
 .about-text p {
     color: var(--dark-blue);
-    line-height: 1.7;
+    line-height: 1.8;
+    font-size: 18px;
     margin: 0;
     font-family: 'Nunito', sans-serif;
 }
