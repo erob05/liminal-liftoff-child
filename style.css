@@ -34,6 +34,14 @@ Tags:        custom
     color: var(--orange);
 }
 
+.green {
+    color: var(--green);
+}
+
+.teal {
+    color: var(--teal);
+}
+
 /* Header
    ========================================================================== */
 
@@ -47,6 +55,10 @@ Tags:        custom
     margin-bottom: 20px;
     box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 22px 22px;
+    
+    @media (max-width: 450px) {
+        .logo {display: none;}
+    }
 }
 
 /* Logo */
@@ -188,7 +200,7 @@ Tags:        custom
 /* App icon */
 .footer-app-icon {
     border-radius: 22px;
-    background-color: #e8e4e4;
+    background-color: var(--cream);
 }
 
 /* Layout
@@ -225,19 +237,29 @@ p, a {
 .hero {
     position: relative;
     overflow: hidden;
-    min-height: 800px;
     display: flex;
     align-items: center;
+    height: 65vh;
 }
 
 .hero-bg {
     position: absolute;
     inset: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 65vh;
+    object-fit: contain;
     z-index: 0;
     opacity: 1;
+    background-image: url('img/space.jpg');
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-inner {
@@ -247,6 +269,8 @@ p, a {
     align-items: center;
     padding: 4rem 6rem;
     gap: 2rem;
+
+    @media (max-width: 768px) {padding: 2rem;}
 }
 
 .hero-text {
@@ -290,11 +314,13 @@ p, a {
     padding: 0.6rem 1.5rem;
     padding-left: 5.5rem;
     padding-right: 5.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-radius: 26px;
     font-weight: 600;
     cursor: pointer;
-    margin-left: 35%;
-    margin-top: -5rem;
+    margin-left: 33%;
+    margin-top: -2rem;
     border: 1px solid var(--purple);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     &:hover {
@@ -303,10 +329,15 @@ p, a {
     }
 }
 
-.hero-image .rocket {
-    width: 200px;
-    height: auto;
+.tagline {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(20px, 1.5vw, 32px);
+    text-align: center;
+    color: var(--orange);
+    text-shadow: 1.3px 1.5px 0.5px rgba(0, 0, 0, 0.4);
 }
+
+.hero-img {}
 
 /* Descriptions
    ========================================================================== */
@@ -331,6 +362,8 @@ p, a {
     display: block;
     /* flex: 1; */
     object-fit: cover;
+    max-width: 1280px;
+    height: 960px;
 }
 
 .frame-bars {
@@ -391,6 +424,11 @@ p, a {
     }
 }
 
+.desc-text-right {
+    width: 50%;
+    @media (max-width: 1200px) {width: 100%}
+}
+
 .desc-text-orange {
     background-image: url(img/orange-dust.png);
     box-shadow: -10px 0 29px -2px rgba(26, 16, 50, 0.7);
@@ -404,7 +442,7 @@ p, a {
 .desc-title-image {
     width: 100%;
     max-width: 380px;
-    height: auto;
+    height: 200px;
 }
 
 .desc-block {
@@ -578,14 +616,14 @@ p, a {
     background: #F6F6DE;
 }
 
-.about-image img {
+.embed {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 16px;
     padding: 2rem;
     box-sizing: border-box;
+    min-height: 700px;
 }
 
 .about-title {
@@ -620,6 +658,16 @@ p, a {
     font-family: 'Nunito', sans-serif;
 }
 
+.about-p {
+    width: 50%;
+    @media (max-width: 1500px) {width: 100%;}
+}
+
+.feat1-p {
+    width: 30%;
+    @media (max-width: 2000px) {width: 100%;}
+}
+
 /* Feature title panels */
 .about-feature-title {
     display: flex;
@@ -648,7 +696,7 @@ p, a {
         margin-left: 45%;
     }
     @media (max-width: 1920px) {
-        margin-left: 25%;
+        margin-left: 5%;
     }
     @media (max-width: 768px) {
         margin-left: 0%;
@@ -734,6 +782,9 @@ p, a {
     display: block;
     width: 100%;
     height: 350px;
+    @media (max-width: 310px) {
+        width: 85%;
+    }
 }
 
 .card-text {
@@ -743,7 +794,7 @@ p, a {
     transform: translate(-50%, -50%);
 }
 
-.card-text h3, h4, p {
+.card-text h3, .card-text h4, .card-text p {
     margin: 0;
     padding: 0;
     width: 375px;

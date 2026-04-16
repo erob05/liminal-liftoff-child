@@ -28,7 +28,7 @@
 	<header id="masthead" class="site-header">
 		<div class="logo">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img src="https://placehold.co/80x80" alt="Liminal Liftoff Logo">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ll-rocket-logo.svg" alt="Liminal Liftoff Logo">
             </a>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-title"><span class="purple">Liminal</span><br><span class="orange">Liftoff</span></a>
         </div>

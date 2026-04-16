@@ -16,15 +16,13 @@ get_header();
         <h2 class="team-section-title">Project Leaders</h2>
         <div class="team-grid team-grid--3">
         <div>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card.png" alt="Butler Community College" width="728" height="382" class="card"/>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-nathan.png" alt="nathan anderson headshot" width="728" height="382" class="card"/>
         </div>
         <div>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card.png" alt="Butler Community College" width="728" height="382" class="card"/>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Eric_Roberts-3-cropped.jpg" alt="Butler Community College" width="150" height="150" class="profile-pic"/>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-taylor.png" alt="taylor sporn headshot" width="728" height="382" class="card"/>
         </div>
         <div>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card.png" alt="Butler Community College" width="728" height="382" class="card"/>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Eric_Roberts-3-cropped.jpg" alt="Butler Community College" width="150" height="150" class="profile-pic"/>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-lauren.png" alt="lauren weiss headshot" width="728" height="382" class="card"/>
         </div>
         </div>
     </section>
@@ -33,26 +31,15 @@ get_header();
     <section class="team-section team-section--purple">
         <h2 class="team-section-title"><span class="purple">Game Development Leaders</span></h2>
         <div class="team-grid team-grid--3">
-            <?php for ($i = 0; $i < 3; $i++) : ?>
-            <div class="team-card">
-                <div class="team-card-image">
-                    <img src="https://placehold.co/300x250" alt="Team member" />
-                </div>
-                <div class="team-card-body">
-                    <div class="team-card-info">
-                        <div>
-                            <p class="team-card-name">John Doe</p>
-                            <p class="team-card-role">Lead Game Developer</p>
-                        </div>
-                        <div class="team-card-links">
-                            <a href="#" class="team-link team-link--b">B</a>
-                            <a href="#" class="team-link team-link--a">A</a>
-                        </div>
-                    </div>
-                    <p class="team-card-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                </div>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-jonah.png" alt="jonah moore headshot" width="728" height="382" class="card"/>
             </div>
-            <?php endfor; ?>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-nimona.png" alt="nimona bock headshot" width="728" height="382" class="card"/>
+            </div>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-akira.png" alt="akira siharat headshot" width="728" height="382" class="card"/>
+            </div>
         </div>
     </section>
 
@@ -60,80 +47,47 @@ get_header();
     <section class="team-section team-section--cream">
         <h2 class="team-section-title">Digital Marketing Leaders</h2>
         <div class="team-grid team-grid--3">
-            <?php for ($i = 0; $i < 3; $i++) : ?>
-            <div class="team-card">
-                <div class="team-card-image">
-                    <img src="https://placehold.co/300x250" alt="Team member" />
-                </div>
-                <div class="team-card-body">
-                    <div class="team-card-info">
-                        <div>
-                            <p class="team-card-name">John Doe</p>
-                            <p class="team-card-role">Lead Game Developer</p>
-                        </div>
-                        <div class="team-card-links">
-                            <a href="#" class="team-link team-link--b">B</a>
-                            <a href="#" class="team-link team-link--a">A</a>
-                        </div>
-                    </div>
-                    <p class="team-card-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                </div>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-parker.png" alt="parker slaugher headshot" width="728" height="382" class="card"/>
             </div>
-            <?php endfor; ?>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-aldair.png" alt="aldair martinez headshot" width="728" height="382" class="card"/>
+            </div>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-eric.png" alt="eric roberts headshot" width="728" height="382" class="card"/>
+            </div>
         </div>
     </section>
 
     <!-- Game Development Members -->
     <section class="team-section team-section--peach">
         <h2 class="team-section-title"><span class="purple">Game Development Members</span></h2>
-        <div class="team-grid team-grid--4">
-            <?php for ($i = 0; $i < 4; $i++) : ?>
-            <div class="team-card">
-                <div class="team-card-image">
-                    <img src="https://placehold.co/300x250" alt="Team member" />
-                </div>
-                <div class="team-card-body">
-                    <div class="team-card-info">
-                        <div>
-                            <p class="team-card-name">John Doe</p>
-                            <p class="team-card-role">Lead Game Developer</p>
-                        </div>
-                        <div class="team-card-links">
-                            <a href="#" class="team-link team-link--b">B</a>
-                            <a href="#" class="team-link team-link--a">A</a>
-                        </div>
-                    </div>
-                    <p class="team-card-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                </div>
+        <div class="team-grid team-grid--3">
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-sam.png" alt="sam arias headshot" width="728" height="382" class="card"/>
             </div>
-            <?php endfor; ?>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-harry.png" alt="harry goehring headshot" width="728" height="382" class="card"/>
+            </div>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-alexa.png" alt="alexa hardin headshot" width="728" height="382" class="card"/>
+            </div>
         </div>
     </section>
 
     <!-- Digital Marketing Members -->
     <section class="team-section team-section--cream">
         <h2 class="team-section-title">Digital Marketing Members</h2>
-        <div class="team-grid team-grid--4">
-            <?php for ($i = 0; $i < 4; $i++) : ?>
-            <div class="team-card">
-                <div class="team-card-image">
-                    <img src="https://placehold.co/300x250" alt="Team member" />
-                </div>
-                <div class="team-card-body">
-                    <div class="team-card-info">
-                        <div>
-                            <p class="team-card-name">John Doe</p>
-                            <p class="team-card-role">Lead Game Developer</p>
-                        </div>
-                        <div class="team-card-links">
-                            <a href="#" class="team-link team-link--b">B</a>
-                            <a href="#" class="team-link team-link--a">A</a>
-                        </div>
-                    </div>
-                    <p class="team-card-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                </div>
+        <div class="team-grid team-grid--3">
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-lilly.png" alt="lilly mitchell headshot" width="728" height="382" class="card"/>
             </div>
-            <?php endfor; ?>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-amanda.png" alt="amanda johnson headshot" width="728" height="382" class="card"/>
+            </div>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-steph.png" alt="stephanie galdamez headshot" width="728" height="382" class="card"/>
+            </div>
         </div>
     </section>
 
