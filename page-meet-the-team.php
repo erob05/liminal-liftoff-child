@@ -29,7 +29,7 @@ get_header();
 
     <!-- Game Development Leaders -->
     <section class="team-section team-section--purple">
-        <h2 class="team-section-title"><span class="purple">Game Development Leaders</span></h2>
+        <h2 class="team-section-title"><span class="purple">Game Development Members</span></h2>
         <div class="team-grid team-grid--3">
             <div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-jonah.png" alt="jonah moore headshot" width="728" height="382" class="card"/>
@@ -45,7 +45,7 @@ get_header();
 
     <!-- Digital Marketing Leaders -->
     <section class="team-section team-section--cream">
-        <h2 class="team-section-title">Digital Marketing Leaders</h2>
+        <h2 class="team-section-title">Digital Marketing Members</h2>
         <div class="team-grid team-grid--3">
             <div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-parker.png" alt="parker slaugher headshot" width="728" height="382" class="card"/>
@@ -62,12 +62,15 @@ get_header();
     <!-- Game Development Members -->
     <section class="team-section team-section--peach">
         <h2 class="team-section-title"><span class="purple">Game Development Members</span></h2>
-        <div class="team-grid team-grid--3">
+        <div class="team-grid team-grid--4">
             <div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-sam.png" alt="sam arias headshot" width="728" height="382" class="card"/>
             </div>
             <div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-harry.png" alt="harry goehring headshot" width="728" height="382" class="card"/>
+            </div>
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-selah.png" alt="selah goldston headshot" width="728" height="382" class="card"/>
             </div>
             <div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-alexa.png" alt="alexa hardin headshot" width="728" height="382" class="card"/>
