@@ -49,7 +49,7 @@ get_header();
             <p class="about-p">After the work is done, what stays with you? The team reflects on what they learned making a game at this scale. More than just a project, Liminal Liftoff became an experience for everyone involved.</p>
         </div>
         <div class="about-image">
-            <iframe class="embed" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=7kC7QXPFcSMl2YSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="embed" src="https://www.youtube.com/404" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="about-text">
             <h2 class="about-title">View the Documentary</h2>

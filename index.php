@@ -14,22 +14,16 @@
 
 get_header();
 ?>
+<script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
 
 <main id="primary" class="site-main">
 
     <section class="hero">
-        <div class="hero-inner">
-            <div class="hero-text">
-                <!-- <h1 class="hero-title">
-                    <span class="hero-title-top">Liminal</span>
-                    <span class="hero-title-bottom">Liftoff</span>
-                </h1> -->
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ll-title-orange.svg" class="hero-img" alt="Butler Community College" width="728" height="382"/>
-				<!-- <p class="tagline">Be smart. Then be brave.</p> -->
-                <a href="#" class="hero-btn">Buy Now</a>
-            </div>
-        </div>
-        <div class="hero-bg"></div>
+		<div class="hero-inner">
+			<a href="#" class="hero-btn">Download Now</a>
+		</div>
+
+		<div class="hero-bg" id="lottie-animation"></div>
     </section>
 
 	<section class="desc-row">
@@ -51,14 +45,14 @@ get_header();
 			<!-- Text -->
 			<div class="desc-text desc-text-orange">
 
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/follow-stickynote.svg" class="desc-title-image" alt="Follow the notes, description 1 header">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/follow-stickynote.png" class="desc-title-image" alt="Follow the notes, description 1 header">
 
 				<div class="desc-block">
 					<h3 class="desc-subheading">
 						<img class="heading-star" src="<?php echo get_stylesheet_directory_uri(); ?>/img/starred.svg">
 						Discover a layered narrative
 					</h3>
-					<p class="desc-text-right">Each message adds context, building a story through exploration rather than exposition. Pay attention. Everything matters. The deeper you go, the harder it is to ignore what those notes are really saying.</p>
+					<p class="desc-text-right desc-p">Each message adds context, building a story through exploration rather than exposition. Pay attention. Everything matters. The deeper you go, the harder it is to ignore what those notes are really saying.</p>
 				</div>
 
 				<div class="desc-block">
@@ -66,7 +60,7 @@ get_header();
 						<img class="heading-star" src="<?php echo get_stylesheet_directory_uri(); ?>/img/starblue.svg">
 						A story left behind
 					</h3>
-					<p class="desc-text-right">Use notes, clues, and everyday objects to uncover hidden meanings and unlock new paths through the house!</p>
+					<p class="desc-text-right desc-p">Use notes, clues, and everyday objects to uncover hidden meanings and unlock new paths through the house!</p>
 				</div>
 
 				</div>
@@ -78,14 +72,14 @@ get_header();
 			<!-- Text -->
 			<div class="desc-text-left desc-text-purple">
 
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mom-stickynote.svg" class="desc-title-image" alt="Go get mom, description 2 header">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mom-stickynote.png" class="desc-title-image" alt="Go get mom, description 2 header">
 
 				<div class="desc-block">
 					<h3 class="desc-subheading">
 						<img class="heading-star" src="<?php echo get_stylesheet_directory_uri(); ?>/img/starred.svg">
 						Build your way forward
 					</h3>
-					<p>Collect scattered parts and use your tools to construct a rocket capable of reaching your goal.</p>
+					<p class="desc-p">Collect scattered parts and use your tools to construct a rocket capable of reaching your goal.</p>
 				</div>
 
 				<div class="desc-block">
@@ -93,7 +87,7 @@ get_header();
 						<img class="heading-star" src="<?php echo get_stylesheet_directory_uri(); ?>/img/starblue.svg">
 						She believes in you
 					</h3>
-					<p>Keep going even when your nightmares take hold. Do it for her. Because she's waiting for you.</p>
+					<p class="desc-p">Keep going even when your nightmares take hold. Do it for her. Because she's waiting for you.</p>
 				</div>
 			</div>
 			<!-- Image + Bars -->
@@ -113,6 +107,24 @@ get_header();
 		</div>
 	</section>
 </main><!-- #main -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const anim = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: '<?php echo get_stylesheet_directory_uri(); ?>/img/data.json',
 
+	rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice'
+  }
+  });
+
+  anim.addEventListener('complete', function() {
+    anim.goToAndStop(anim.totalFrames, true);
+  });
+});
+</script>
 <?php
 get_footer();
