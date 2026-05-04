@@ -353,11 +353,25 @@ p, a {
 
 .desc-image-frame img {
     width: 100%;
-    height: auto;
-    max-width: 100%;
     border-radius: 16px;
     display: block;
     object-fit: cover;
+    max-width: 1280px;
+    height: 960px;
+}
+
+@media (max-width: 768px) {
+    .desc-image-frame {
+        width: 100%;
+        margin: 0;
+    }
+
+    .desc-image-frame img {
+        width: 100%;
+        height: auto;        /* key change: removes forced cropping */
+        max-width: 100%;
+        object-fit: contain; /* keeps full image visible */
+    }
 }
 
 .frame-bars {
