@@ -20,7 +20,7 @@ get_header();
 
     <section class="hero">
 		<div class="hero-inner">
-			<a href="#" class="hero-btn">Download Now</a>
+			<a href="https://drive.google.com/file/d/1cqXhUbVa5MVgo98079ezi7Ypa-UDh4gv/view" class="hero-btn">Download Now</a>
 		</div>
 
 		<div class="hero-bg" id="lottie-animation"></div>
