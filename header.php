@@ -36,6 +36,6 @@
             <a <?php if ( is_front_page() ) echo 'class="current"'; ?> href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
             <a <?php if ( is_page( 'about' ) ) echo 'class="current"'; ?> href="<?php echo esc_url( get_permalink( get_page_by_path( 'about' ) ) ); ?>">About the Game</a>
             <a <?php if ( is_page( 'meet-the-team' ) ) echo 'class="current"'; ?> href="<?php echo esc_url( get_permalink( get_page_by_path( 'meet-the-team' ) ) ); ?>">Meet the Team</a>
-            <a id="buy-btn" href="https://drive.google.com/file/d/1cqXhUbVa5MVgo98079ezi7Ypa-UDh4gv/view">Download</a>
+            <a id="buy-btn" href="https://chaszra.itch.io/liminal-liftoff">Download</a>
         </nav>
 	</header><!-- #masthead -->
